@@ -12,7 +12,7 @@ def zmianaPunktu():
     regulaorr.ustawieniePunktuDocelowego(pozX,pozY)
     f.close()
 
-def lokalizacjaM():   
+def lokalizacjaA():   
     frame = kamerka.obraz()    
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     corners, ids, rejected = aruco.detectMarkers(image=gray, dictionary=aruco_dict, parameters=parameters,
